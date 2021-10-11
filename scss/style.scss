@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #FAFAFA;
+  color: #162331;
+}
+.container {
+  width: auto;
+  margin: 0 120px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.header {
+  padding: 56px 0;
+  .title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .title-desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+  }
+}
+
+
+.section-main {
+  padding-bottom: 80px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .block {
+      position: relative;
+      max-width: 368px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 32px 24px 48px 24px;
+      .sale {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding: 8px 0;
+        top: -10px;
+        left: 24px;
+        right: 24px;
+        width: auto;
+        color: #FFFFFF;
+        background: #EC9139;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px 8px 0px 0px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+      }
+      &__title {
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+      }
+      .title2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+      }
+      hr {
+        margin: 24px 0;
+      }
+      span {
+        position: relative;
+        display: flex;
+        justify-content: end;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #EC9139;
+        padding-right: 6px;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 13px;
+          right: 0;
+          width: 68px;
+          border: 1px solid #EC9139;
+          transform: rotate(-10.78deg);
+          color: #EC9139;
+        }
+      }
+      .price1 {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: #0465C7;
+        display: flex;
+        align-items: center;
+        height: 118px;
+      }
+      &__price {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        .valute {
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          color: #0465C7;
+          display: flex;
+          align-items: flex-start;
+        }
+        .price {
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 75px;
+          text-align: center;
+          color: #0465C7;
+          display: flex;
+          align-items: center;
+        }
+        .period {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 32px;
+          color: #0465C7;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    
+      &__button {
+        display: block;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid #162331;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin: 48px auto;
+        padding: 16px 36px;
+      }
+      .button2 {
+        background: #EC9139;
+        color: #ffffff;
+        border: none;
+      }
+      .button3 {
+        background: #0465C7;
+        color: #ffffff;
+        border: none;
+      }
+      &__description {
+        .desc-item {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 16px;
+          &:nth-last-child(1) {
+            padding-bottom: 0;
+          }
+          .text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+          }
+          .value {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+    .block2 {
+      box-shadow: 0px 0px 8px #EC9139, 0px 0px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.footer {
+  background: #1E1F24;
+  color: #FFFFFF;
+  .top-footer {
+    padding: 40px 0;
+    .row {
+      .block {
+        &__title {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.3);
+          padding-bottom: 16px;
+        }
+        &__link {
+          display: block;
+          margin-bottom: 16px;
+        }
+        &__info {
+          .desc {
+            display: flex;
+            margin-bottom: 16px;
+            .text {
+              width: 80%;
+              margin-left: 18px;
+            }
+          }
+        }
+        &__icon {
+          display: flex;
+          .icon-item {
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+            mix-blend-mode: normal;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+      .block4 {
+        .block__title {
+          margin-left: 100px;
+        }
+        .block__icon {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    padding: 20px 0 34px 0;
+    .row {
+      .left-block {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .right-block {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.3);
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
