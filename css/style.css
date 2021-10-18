@@ -120,6 +120,18 @@ a:hover {
   text-transform: uppercase;
 }
 
+@media (max-width: 408px) {
+  .section-main .row .block .sale {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 344px) {
+  .section-main .row .block .sale {
+    font-size: 8px;
+  }
+}
+
 .section-main .row .block__title {
   display: block;
   font-weight: bold;
